@@ -50,6 +50,7 @@ Ao alterar conteúdo no PT, replicar as mesmas alterações nas outras três ver
 - A seção Farinha tem fundo escuro (`#4a4740`) para se destacar das demais.
 - Paleta: fundo pergaminho `#faf9f6`, dourado `#9a7b3f` como acento, tipografia EB Garamond (títulos) + Inter (corpo).
 - Evitar itálico no corpo do texto — dificulta a leitura.
+- A stack de fontes serif é `'EB Garamond', 'Noto Serif', Georgia, serif`. O Noto Serif é fallback necessário para cobrir caracteres romenos (ț, ș) que o EB Garamond do Google Fonts não possui — sem ele, o navegador cai para a fonte do sistema e o caractere renderiza em tamanho diferente.
 
 ## Conteúdo e ordem das seções
 
