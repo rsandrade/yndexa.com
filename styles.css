@@ -253,12 +253,20 @@ a {
 }
 
 .hero-inner {
-  display: grid;
-  grid-template-columns: 1fr 420px;
-  gap: 64px;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
   padding-top: 48px;
   padding-bottom: 48px;
+}
+
+.hero-text {
+  max-width: 720px;
+}
+
+.hero-emblem {
+  display: none;
 }
 
 .hero-eyebrow {
@@ -617,23 +625,6 @@ a {
    RESPONSIVE
    ========================================= */
 @media (max-width: 900px) {
-  .hero-inner {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0;
-    padding-top: 48px;
-    padding-bottom: 48px;
-  }
-
-  .hero-text {
-    max-width: 720px;
-  }
-
-  .hero-emblem {
-    display: none;
-  }
-
   .about-grid {
     grid-template-columns: 1fr;
     gap: 8px;
